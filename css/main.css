@@ -100,10 +100,10 @@ Author's custom styles
 /* ##########################   SMARTPHONE   ########################### */
 /* ##################################################################### */
 /* Extra small devices (phones, less than 768px) */
-html {
+/*html {
   position: relative;
   min-height: 100%;
-}
+}*/
 body {
   /*margin-bottom: 60px;*/
   background: #7F8289 !important;
@@ -162,11 +162,16 @@ body {
 .prestation li a{
   color: white;
 }
+.sm{
+  margin-left: 30%;
+}
+.md, .lg{
+  display: none;
+}
 /*==================footer=================*/
 .footer {
   text-align: center;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 40px;
   line-height: 40px;
   font-size: 20px;
@@ -193,18 +198,40 @@ body {
 }
 
 
+
+
 /*=================================================
 =======================contact css=================
 ===================================================*/
-form{
+form {
   padding-top: 10%;
+  margin-bottom: 10%;
 }
+
+.mail-phone{
+  margin-top: 20%;
+  margin-left: 10%;
+
+}
+.mail-phone a{
+  color: white;
+
+}
+
 
 /* ##################################################################### */
 /* ############################   TABLETS   ############################ */
 /* ##################################################################### */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .sm, .lg{
+    display: none;
+  }
+  .md{
+    display: unset;
+    margin-left: 30%;
+  }
+
 
 }
 
@@ -213,16 +240,18 @@ form{
 /* ##################################################################### */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .sm,.md{
+    display: none;
+  }
+  .lg{
+    display: unset;
+
+  }
+
 
 }
 
-/* ##################################################################### */
-/* ########################   LARGE DESKTOPS   ######################### */
-/* ##################################################################### */
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 
-}
 
 
 
