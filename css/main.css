@@ -100,15 +100,15 @@ Author's custom styles
 /* ##########################   SMARTPHONE   ########################### */
 /* ##################################################################### */
 /* Extra small devices (phones, less than 768px) */
-/*html {
+html {
   position: relative;
   min-height: 100%;
-}*/
+}
 body {
   /*margin-bottom: 60px;*/
   background: #7F8289 !important;
+  margin-bottom: 60px;
 }
-
 
 /*================carousel ===============*/
 .carousel-inner > .item > img,
@@ -118,6 +118,7 @@ body {
 }
 /*==============navbar===========*/
 .navbar{
+  text-align: center;
   position:fixed !important;
   top: 0px;
   right: 0px;
@@ -128,17 +129,6 @@ body {
   z-index: 1;
   opacity: 0.5;
   padding-right: 2%;
-}
-
-/*===============h1 daniel============*/
-.daniel{
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  position: absolute;
-  top: 40%;
-  right: 30%;
 }
 
 /*==============prestation============*/
@@ -162,6 +152,11 @@ body {
 .prestation li a{
   color: white;
 }
+
+.images{
+  margin-bottom: 20%;
+  padding-left: 15%;
+}
 .sm{
   margin-left: 30%;
 }
@@ -169,25 +164,29 @@ body {
   display: none;
 }
 /*==================footer=================*/
+
+
 .footer {
-  text-align: center;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 60px;
   background-color: black;
   color: white;
+  line-height: 40px;
+  font-size: 20px;
 }
 
 
 
-/*===============calender page===========*/
+
+/*=====================================================
+=================calender page=========================
+=======================================================*/
 .calender{
-  padding: 5%;
-}
-
-.old-img{
-  padding: 5%;
+  margin: 10% 0;
 }
 
 .figcap{
@@ -218,7 +217,6 @@ form {
 
 }
 
-
 /* ##################################################################### */
 /* ############################   TABLETS   ############################ */
 /* ##################################################################### */
@@ -231,7 +229,10 @@ form {
     display: unset;
     margin-left: 30%;
   }
-
+  .images{
+    margin-bottom: 10%;
+    padding-left: 0px;
+  }
 
 }
 
@@ -240,7 +241,40 @@ form {
 /* ##################################################################### */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .sm,.md{
+
+  /*===============h1 daniel============*/
+  .daniel{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:40%;
+    right: 30%;
+  }
+
+  .sm{
+    margin-left: 30%;
+  }
+  .md, .lg{
+    display: none;
+  }
+  /*=====================================================
+  =================calender page=========================
+  =======================================================*/
+  .calender, .old-img{
+    margin: 10% 0;
+  }
+
+
+  .figcap{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 2%;
+  }
+
+.sm,.md{
     display: none;
   }
   .lg{
